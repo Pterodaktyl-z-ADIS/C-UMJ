@@ -81,3 +81,16 @@ eagle.epf
 
 # file locks introduced since 7.x
 *.lck
+
+# STM32Cube copied library and project folders
+Drivers/*
+MDK-ARM/*
+EWARM/*
+# CrossWorks project files
+!*/*.hzp
+!*/*.hzs
+
+*.o
+.mxproject
+.cproject
+.project
