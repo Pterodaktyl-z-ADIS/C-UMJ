@@ -3490,17 +3490,17 @@ design rules under a new name.</description>
 </signal>
 <signal name="ENC_L_B">
 <contactref element="ENC-L" pad="5"/>
-<contactref element="U1" pad="CN9_6"/>
-<contactref element="U1" pad="CN10_27"/>
-<wire x1="-11.43" y1="20.94" x2="-128.27" y2="-73.66" width="0" layer="19" extent="1-1"/>
-<wire x1="-6.35" y1="20.94" x2="-11.43" y2="20.94" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="CN10_29"/>
+<contactref element="U1" pad="CN9_5"/>
+<wire x1="-11.43" y1="18.4" x2="-128.27" y2="-73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.35" y1="18.4" x2="-11.43" y2="18.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC_L_A">
 <contactref element="ENC-L" pad="4"/>
-<contactref element="U1" pad="CN10_29"/>
-<contactref element="U1" pad="CN9_5"/>
-<wire x1="-11.43" y1="18.4" x2="-130.81" y2="-73.66" width="0" layer="19" extent="1-1"/>
-<wire x1="-6.35" y1="18.4" x2="-11.43" y2="18.4" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="CN9_6"/>
+<contactref element="U1" pad="CN10_27"/>
+<wire x1="-11.43" y1="20.94" x2="-130.81" y2="-73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.35" y1="20.94" x2="-11.43" y2="20.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC_R_B">
 <contactref element="ENC-R" pad="5"/>
@@ -3557,8 +3557,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="VL_INT2">
 <contactref element="VL-M" pad="2"/>
-<contactref element="U1" pad="CN10_16"/>
-<wire x1="-3.81" y1="36.18" x2="-151.13" y2="-156.21" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="CN10_34"/>
+<wire x1="-3.81" y1="13.32" x2="-151.13" y2="-156.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VL_XSDN3">
 <contactref element="VL-R" pad="1"/>
@@ -3573,26 +3573,28 @@ design rules under a new name.</description>
 <signal name="GYRO_SCL">
 <contactref element="R3" pad="1"/>
 <contactref element="GYRO" pad="6"/>
+<contactref element="U1" pad="CN5_3"/>
+<contactref element="U1" pad="CN10_17"/>
 <wire x1="-142.24" y1="-195.58" x2="-156.21" y2="-185.42" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.43" y1="35.16" x2="-156.21" y2="-185.42" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.35" y1="33.64" x2="-11.43" y2="35.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GYRO_SDA">
 <contactref element="R4" pad="1"/>
 <contactref element="GYRO" pad="7"/>
+<contactref element="U1" pad="CN7_21"/>
 <wire x1="-139.7" y1="-195.58" x2="-156.21" y2="-190.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.31" y1="28.56" x2="-139.7" y2="-195.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GYRO_DEN">
 <contactref element="GYRO" pad="1"/>
-</signal>
-<signal name="GYRO_CS">
-<contactref element="GYRO" pad="3"/>
-</signal>
-<signal name="N$4">
-<contactref element="GYRO" pad="10"/>
-<contactref element="GYRO" pad="4"/>
-<wire x1="-132.08" y1="-195.58" x2="-147.32" y2="-195.58" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="CN10_14"/>
+<wire x1="-3.81" y1="38.72" x2="-154.94" y2="-195.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GYRO_INT1">
 <contactref element="GYRO" pad="2"/>
+<contactref element="U1" pad="CN10_12"/>
+<wire x1="-3.81" y1="41.26" x2="-152.4" y2="-195.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD_RST">
 <contactref element="LCD" pad="1"/>
@@ -3704,6 +3706,9 @@ design rules under a new name.</description>
 <contactref element="ENC-L" pad="3"/>
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="2"/>
+<contactref element="GYRO" pad="10"/>
+<contactref element="GYRO" pad="4"/>
+<contactref element="GYRO" pad="3"/>
 <wire x1="-133.35" y1="-67.31" x2="-133.35" y2="-73.66" width="0" layer="19" extent="1-1"/>
 <wire x1="-149.86" y1="-114.3" x2="-133.35" y2="-73.66" width="0" layer="19" extent="1-1"/>
 <wire x1="-156.21" y1="-134.62" x2="-149.86" y2="-114.3" width="0" layer="19" extent="1-1"/>
@@ -3712,6 +3717,9 @@ design rules under a new name.</description>
 <wire x1="-146.05" y1="-180.34" x2="-146.05" y2="-175.26" width="0" layer="19" extent="1-1"/>
 <wire x1="-146.05" y1="-185.42" x2="-146.05" y2="-180.34" width="0" layer="19" extent="1-1"/>
 <wire x1="-146.05" y1="-190.5" x2="-146.05" y2="-185.42" width="0" layer="19" extent="1-1"/>
+<wire x1="-147.32" y1="-195.58" x2="-146.05" y2="-190.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-149.86" y1="-195.58" x2="-147.32" y2="-195.58" width="0" layer="19" extent="1-1"/>
+<wire x1="-132.08" y1="-195.58" x2="-146.05" y2="-190.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LS">
 <contactref element="LCD" pad="6"/>
@@ -3725,11 +3733,6 @@ design rules under a new name.</description>
 <wire x1="-142.24" y1="-201.93" x2="-149.86" y2="-234.95" width="0" layer="19" extent="1-1"/>
 <wire x1="-64.77" y1="36.18" x2="-142.24" y2="-201.93" width="0" layer="19" extent="1-1"/>
 <wire x1="-59.69" y1="36.18" x2="-64.77" y2="36.18" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$2">
-<contactref element="U1" pad="CN8_6"/>
-<contactref element="U1" pad="CN7_38"/>
-<wire x1="-59.69" y1="8.24" x2="-64.77" y2="8.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BT_LED">
 <contactref element="U1" pad="CN7_3"/>
@@ -3751,7 +3754,9 @@ design rules under a new name.</description>
 <signal name="BUTTON1">
 <contactref element="S2" pad="2"/>
 <contactref element="C11" pad="1"/>
+<contactref element="U1" pad="CN10_4"/>
 <wire x1="-150.97" y1="-260.35" x2="-156.86" y2="-267.97" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.81" y1="51.42" x2="-150.97" y2="-260.35" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
