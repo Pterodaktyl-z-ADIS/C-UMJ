@@ -8431,6 +8431,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C9" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="100nF"/>
+<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8511,8 +8512,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <instance part="+3V3" gate="G$1" x="10.16" y="83.82" smashed="yes">
 <attribute name="VALUE" x="7.62" y="83.82" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND4" gate="1" x="7.62" y="55.88" smashed="yes">
-<attribute name="VALUE" x="5.08" y="53.34" size="1.778" layer="96"/>
+<instance part="GND4" gate="1" x="7.62" y="53.34" smashed="yes">
+<attribute name="VALUE" x="5.08" y="50.8" size="1.778" layer="96"/>
 </instance>
 <instance part="GND5" gate="1" x="71.12" y="53.34" smashed="yes">
 <attribute name="VALUE" x="68.58" y="50.8" size="1.778" layer="96"/>
@@ -8584,8 +8585,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <attribute name="NAME" x="29.21" y="121.285" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="29.21" y="147.32" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND9" gate="1" x="35.56" y="109.22" smashed="yes">
-<attribute name="VALUE" x="33.02" y="106.68" size="1.778" layer="96"/>
+<instance part="GND9" gate="1" x="33.02" y="111.76" smashed="yes">
+<attribute name="VALUE" x="30.48" y="109.22" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="40.64" y="154.94" smashed="yes">
 <attribute name="VALUE" x="38.735" y="158.115" size="1.778" layer="96"/>
@@ -8650,6 +8651,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <attribute name="NAME" x="141.224" y="165.481" size="1.778" layer="95"/>
 <attribute name="VALUE" x="141.224" y="160.401" size="1.778" layer="96"/>
 </instance>
+<instance part="GND13" gate="1" x="2.54" y="111.76" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -8718,7 +8720,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <segment>
 <pinref part="ENC-R" gate="A" pin="6"/>
 <wire x1="0" y1="78.74" x2="7.62" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="78.74" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="78.74" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -8747,8 +8749,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 </segment>
 <segment>
 <pinref part="DRIVER2" gate="A" pin="8"/>
-<wire x1="25.4" y1="142.24" x2="35.56" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="142.24" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="142.24" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -8911,15 +8913,15 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 </segment>
 <segment>
 <pinref part="VL-M" gate="A" pin="4"/>
-<wire x1="93.98" y1="73.66" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="73.66" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
-<label x="106.68" y="81.28" size="1.778" layer="95" rot="R90"/>
+<wire x1="93.98" y1="73.66" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="73.66" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<label x="109.22" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="VL-R" gate="A" pin="4"/>
-<wire x1="124.46" y1="73.66" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="73.66" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
-<label x="137.16" y="81.28" size="1.778" layer="95" rot="R90"/>
+<wire x1="124.46" y1="73.66" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="73.66" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<label x="139.7" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U1" gate="CN10" pin="PB11"/>
@@ -8941,15 +8943,15 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 </segment>
 <segment>
 <pinref part="VL-M" gate="A" pin="3"/>
-<wire x1="93.98" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="71.12" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
-<label x="111.76" y="81.28" size="1.778" layer="95" rot="R90"/>
+<wire x1="93.98" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="71.12" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
+<label x="114.3" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="VL-R" gate="A" pin="3"/>
-<wire x1="124.46" y1="71.12" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="71.12" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
-<label x="142.24" y="81.28" size="1.778" layer="95" rot="R90"/>
+<wire x1="124.46" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="71.12" x2="144.78" y2="81.28" width="0.1524" layer="91"/>
+<label x="144.78" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U1" gate="CN10" pin="PB10/D6"/>
@@ -9208,8 +9210,11 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <segment>
 <pinref part="DRIVER1" gate="A" pin="1"/>
 <wire x1="12.7" y1="142.24" x2="2.54" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="142.24" x2="2.54" y2="111.76" width="0.1524" layer="91"/>
-<label x="2.54" y="101.6" size="1.778" layer="95" rot="R90"/>
+<wire x1="2.54" y1="142.24" x2="2.54" y2="114.3" width="0.1524" layer="91"/>
+<label x="2.54" y="111.76" size="1.778" layer="95" rot="R180"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="2.54" y1="114.3" x2="2.54" y2="111.76" width="0.1524" layer="91"/>
+<junction x="2.54" y="114.3"/>
 </segment>
 <segment>
 <pinref part="U1" gate="CN10" pin="GND/GND"/>
