@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -160,10 +160,10 @@
 <wire x1="144.76" y1="0" x2="144.76" y2="102.54" width="0" layer="20"/>
 <wire x1="144.76" y1="102.54" x2="0" y2="102.54" width="0" layer="20"/>
 <wire x1="0" y1="102.54" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="-3.81" y1="0" x2="-3.81" y2="100.33" x3="-11.43" y3="50.165" textsize="1.778" layer="1" dtype="horizontal"/>
-<dimension x1="-6.35" y1="0" x2="-6.35" y2="49.53" x3="-6.35" y3="49.53" textsize="1.778" layer="1" dtype="diameter"/>
-<dimension x1="-6.35" y1="49.53" x2="-6.35" y2="100.33" x3="-6.35" y3="100.33" textsize="1.778" layer="1" dtype="diameter"/>
-<dimension x1="64.77" y1="87.63" x2="148.59" y2="87.63" x3="106.68" y3="101.6" textsize="1.778" layer="1"/>
+<dimension x1="-3.81" y1="0" x2="-3.81" y2="100.33" x3="-20.32" y3="50.165" textsize="1.778" layer="1" dtype="horizontal"/>
+<dimension x1="-6.35" y1="0" x2="-6.35" y2="49.53" x3="-12.7" y3="24.765" textsize="1.778" layer="1" dtype="diameter"/>
+<dimension x1="-6.35" y1="49.53" x2="-6.35" y2="100.33" x3="-12.7" y3="74.93" textsize="1.778" layer="1" dtype="diameter"/>
+<dimension x1="0" y1="105.41" x2="144.78" y2="105.41" x3="72.39" y3="115.57" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="NUCLEO-L053R8">
