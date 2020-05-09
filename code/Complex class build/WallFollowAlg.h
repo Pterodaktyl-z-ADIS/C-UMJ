@@ -2,12 +2,12 @@
 #include "Labirynth.h"
 #include "Sensors.h"
 #include "Position.h"
+#include "Move.h"
 
 Labirynth labirynth;
 Sensors sensors;
 Position position;
-
-
+int signal;
 
 bool Algorythm(int X, int Y)
 {
@@ -60,13 +60,17 @@ bool Algorythm(int X, int Y)
 //wybór œciany - póki co na twardo bêdzie to lewa
 
 //trafienie na œciane
-
-
-
-//obs³uga zau³ka
-
-//zawracanie
-
+	if (sensors.wallFront(signal)) {
+		if (sensors.wallLeft(signal) && sensors.wallRight(signal)) {
+			//funkcja odpowiedzialna za dwa obroty o 90 stopni
+			//ruch wzglêdem lewej d³oni
+		}
+		else
+		{
+			//funkcja obrotu w prawo o 90 stopni
+			//ruch wzglêdem prawej d³oni
+		}
+	}
 //ruch
 
 }

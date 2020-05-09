@@ -1,0 +1,2 @@
+D:\Projekty\C-UMJ\WallFollower\x64\Debug\WallFollower.exe
+D:\Projekty\C-UMJ\WallFollower\x64\Debug\WallFollower.pdb

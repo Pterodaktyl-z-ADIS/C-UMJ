@@ -4,11 +4,11 @@ class Sensors
 public:
 	Sensors();
 	~Sensors();
-	bool signalRecived();
-	bool robotConnected();
-	bool wallFront();
-	bool wallLeft();
-	bool wallRight();
+	bool signalRecived(bool info);
+	bool robotConnected(bool C);
+	bool wallFront(int S);
+	bool wallLeft(int S);
+	bool wallRight(int S);
 	void setFront();
 	void setRight();
 	void setLeft();
@@ -31,28 +31,44 @@ Sensors::~Sensors()
 {
 }
 
-inline bool Sensors::signalRecived()
+inline bool Sensors::signalRecived(bool info)
 {
+	if (info == true) {
+		return true;
+	}
 	return false;
 }
 
-inline bool Sensors::robotConnected()
-{
+inline bool Sensors::robotConnected(bool C)
+{	
+	if (C == true) {
+		this->connection == true;
+		return connection;
+	}
 	return false;
 }
 
-inline bool Sensors::wallFront()
-{
+inline bool Sensors::wallFront(int S)
+{	
+	if (S < 1) {
+		return true;
+	}
 	return true;
 }
 
-inline bool Sensors::wallLeft()
+inline bool Sensors::wallLeft(int S)
 {
+	if (S < 1) {
+		return true;
+	}
 	return true;
 }
 
-inline bool Sensors::wallRight()
-{
+inline bool Sensors::wallRight(int S)
+{	
+	if (S < 1) {
+		return true;
+	}
 	return true;
 }
 
