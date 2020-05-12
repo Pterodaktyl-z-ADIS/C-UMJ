@@ -47,7 +47,6 @@
 eagle.epf
 
 # Autorouter files
-*.pro
 *.job
 
 # CAM files
