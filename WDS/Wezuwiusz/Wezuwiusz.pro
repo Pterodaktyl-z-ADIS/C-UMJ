@@ -1,12 +1,14 @@
-QT       += core gui
+QT       += core gui \
+            network \
+            opengl \
+            3dcore 3drender 3dinput 3dextras
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
 
 LIBS   += -lopengl32
-LIBS   += -lglu32
-LIBS   += -lglut32
+
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -19,12 +21,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    glwidget.cpp \
     main.cpp \
     screen_rob.cpp \
     screen_sim.cpp \
     screen_welcome.cpp
 
 HEADERS += \
+    glwidget.h \
     screen_rob.h \
     screen_sim.h \
     screen_welcome.h
