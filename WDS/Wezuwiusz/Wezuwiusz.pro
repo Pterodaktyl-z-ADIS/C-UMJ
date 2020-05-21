@@ -1,3 +1,6 @@
+
+QT       += core gui
+QT      += network
 QT       += core gui \
             network \
             opengl \
@@ -25,13 +28,17 @@ SOURCES += \
     main.cpp \
     screen_rob.cpp \
     screen_sim.cpp \
-    screen_welcome.cpp
+    screen_welcome.cpp \
+    server.cpp \
+    thread.cpp
 
 HEADERS += \
     glwidget.h \
     screen_rob.h \
     screen_sim.h \
-    screen_welcome.h
+    screen_welcome.h \
+    server.h \
+    thread.h
 
 FORMS += \
     screen_rob.ui \
