@@ -1,5 +1,6 @@
 #include "screen_welcome.h"
 #include "ui_screen_welcome.h"
+#include "server.h"
 
 Screen_Welcome::Screen_Welcome(QWidget *parent)
     : QMainWindow(parent)
@@ -11,14 +12,13 @@ Screen_Welcome::Screen_Welcome(QWidget *parent)
     ui->stackedWidget->insertWidget(2, &ScrSim);
     connect(&ScrRob, SIGNAL(HomeClicked()), this, SLOT(moveHome()));
     connect(&ScrSim, SIGNAL(HomeClicked()), this, SLOT(moveHome()));
+    Server conectserver;
 }
 
 Screen_Welcome::~Screen_Welcome()
 {
     delete ui;
 }
-
-
 
 
 void Screen_Welcome::on_butt_Rob_clicked()
@@ -40,7 +40,6 @@ void Screen_Welcome::moveHome()
 {
     ui->stackedWidget->setCurrentIndex(0);
 }
-
 
 
 
