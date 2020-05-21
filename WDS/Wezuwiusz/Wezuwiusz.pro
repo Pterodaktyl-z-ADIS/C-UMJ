@@ -1,4 +1,5 @@
 QT       += core gui
+QT      += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -22,12 +23,16 @@ SOURCES += \
     main.cpp \
     screen_rob.cpp \
     screen_sim.cpp \
-    screen_welcome.cpp
+    screen_welcome.cpp \
+    server.cpp \
+    thread.cpp
 
 HEADERS += \
     screen_rob.h \
     screen_sim.h \
-    screen_welcome.h
+    screen_welcome.h \
+    server.h \
+    thread.h
 
 FORMS += \
     screen_rob.ui \
